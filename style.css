@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playwrite GB S", cursive;
+
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+#logo{
+    width: 150px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    font-weight: 20x;
+    color: rgb(46, 169, 46);
+}
+/* mouse mukalil varumbam color change and underline varal parupadi */
+/* pseudo class is used for that purpose 
+syntax -- selector:pseudo-class{property  vlaue}
+here .links is the class name and hover means mouse when comes on top of that.. then we have to give the changes which should happen . there must be initial values os the styles which should change */
+.links:hover{
+    text-decoration: underline;
+    color: #ed2d2d;}
+
+.home-content{
+    margin: 12% 0px 0px 8%;
+}
+#username{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#name{
+    color: rgb(218, 193, 0);
+}
+#download{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.home-img{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+
+.grp1
+{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.home-img:hover #backgrnd{
+    bottom: 70px;
+}
+.home-img:hover #person{
+    left: 40%;
+}
+#about{
+    margin: 15% 8% 0% 8%;
+}
+.section-head{
+    text-align: center;
+}
+.head{
+    font-size: 50px;
+}
+.sub-head{
+    font-size: 30px;
+}
+.about_body{
+    width: 100%;
+}
+.about-img{
+    width: 30%;
+}
+
+.about_body{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    align-items: center;
+    gap: 20px;
+}
+.about-img>img{
+    width: 170%;
+}
+.about-content{
+    font-size: 18px;
+    text-align: justify;
+    
+}
+.information{
+    margin-top: 1rem;
+}
+.info-box{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.info-box>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0% 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+.myskill{
+    width: 100%;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.bar-head,.bar-percentage{
+    font-weight: 20px;
+    font-size: 1.2rem ;
+}
+
+.base-bar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.html-bar{
+    background-color: rgb(222, 92, 36);
+    width: 90%;
+}
+.html-bar2{
+    background-color: rgb(222, 92, 36);
+    width: 80%;
+}
+.html-bar3{
+    background-color: rgb(222, 92, 36);
+    width: 60%;
+}
+.html-bar4{
+    background-color: rgb(222, 92, 36);
+    width: 70%;
+}
+
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+ 
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    
+}
+#contact{
+    margin: 3% 8%;
+}
+.brands{
+    font-size: 50px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,red,rgb(225, 5, 225));
+}
+
+
+
+/* ---------------animation ------------------------ */
+.icon:hover .brands{
+    animation: shake 3s;
+    color: aliceblue;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+
+
+/*    inside page link transition scrolling effect set cheyunu */
+html{
+    scroll-behavior:smooth ;
+}
+
+
+/*  --------------------  scroll bar -------------------------*/
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(243, 243, 243);
+} 
+::-webkit-scrollbar-thumb{
+    background-color: rgb(242, 167, 54);
+    border-radius: 20px;
+} 
